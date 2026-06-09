@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de...{% endblock %}
+
+{% block background %} {% load static %} {% static 'core/img/about.png' %} {% endblock %}
+
+{% block headers %}
+    <h1>Biografía</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="row">   
+      <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.png' %}" alt="">
+      </div>
+      <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Jesús Marín</h2>   
+        <p class="text-justify">Soy Jesús Marín, Técnico Superior Universitario en Informática y desarrollador enfocado en Python, backend, bases de datos y automatización. He desarrollado aplicaciones web y sistemas de gestión con tecnologías como Flask, FastAPI, SQLAlchemy, MySQL y SQLite.</p>
+        <p class="text-justify">Además, mi experiencia como preparador académico de calculo ha fortalecido mis habilidades de comunicación, análisis y resolución de problemas, mientras continúo creciendo profesionalmente en el desarrollo de software.</p>
+      </div>
+    </div>  
+{% endblock %}

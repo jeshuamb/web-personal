@@ -1,0 +1,410 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+body {
+  font-size: 20px;
+  color: #212529;
+  font-family: Lora, 'Times New Roman', serif;
+}
+
+p {
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #212529;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+a:focus,
+a:hover {
+  color: #0085a1;
+}
+
+blockquote {
+  font-style: italic;
+  color: #868e96;
+}
+
+.avatar {
+  width: 100%;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.section-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.caption {
+  font-size: 14px;
+  font-style: italic;
+  display: block;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* =========================
+   SELECTION
+========================= */
+
+::-moz-selection {
+  color: #fff;
+  background: #0085a1;
+  text-shadow: none;
+}
+
+::selection {
+  color: #fff;
+  background: #0085a1;
+  text-shadow: none;
+}
+
+img::selection,
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+#mainNav {
+  position: absolute;
+  border-bottom: 1px solid #e9ecef;
+  background-color: #fff;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 800;
+  color: #343a40;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  font-weight: 800;
+  padding: 13px;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+#mainNav .navbar-nav > li.nav-item > a {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* =========================
+   NAVBAR (DESKTOP)
+========================= */
+
+@media only screen and (min-width: 992px) {
+  #mainNav {
+    border-bottom: 1px solid transparent;
+    background: transparent;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    transition: background-color .2s;
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  #mainNav .navbar-brand {
+    padding: 10px 20px;
+    color: #fff;
+  }
+
+  #mainNav .navbar-brand:hover,
+  #mainNav .navbar-brand:focus {
+    color: rgba(255, 255, 255, .8);
+  }
+
+  #mainNav .navbar-nav > li.nav-item > a {
+    padding: 10px 20px;
+    color: #fff;
+  }
+
+  #mainNav .navbar-nav > li.nav-item > a:hover,
+  #mainNav .navbar-nav > li.nav-item > a:focus {
+    color: rgba(255, 255, 255, .8);
+  }
+
+  #mainNav.is-fixed {
+    position: fixed;
+    top: -67px;
+    border-bottom: 1px solid #fff;
+    background-color: rgba(255, 255, 255, .9);
+
+    -webkit-transition: -webkit-transform .2s;
+    -moz-transition: -moz-transform .2s;
+    transition: transform .2s;
+  }
+
+  #mainNav.is-fixed .navbar-brand {
+    color: #212529;
+  }
+
+  #mainNav.is-fixed .navbar-brand:hover,
+  #mainNav.is-fixed .navbar-brand:focus {
+    color: #0085a1;
+  }
+
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+    color: #212529;
+  }
+
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover,
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus {
+    color: #0085a1;
+  }
+
+  #mainNav.is-visible {
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+/* =========================
+   HEADER (MASTHEAD)
+========================= */
+
+header.masthead {
+  margin-bottom: 50px;
+  background: no-repeat center center;
+  background-color: #868e96;
+  background-attachment: scroll;
+  position: relative;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #212529;
+  opacity: .5;
+}
+
+header.masthead .page-heading,
+header.masthead .post-heading,
+header.masthead .site-heading {
+  padding: 200px 0 150px;
+  color: #fff;
+  text-align: center;
+}
+
+header.masthead .site-heading h1 {
+  font-size: 68px;
+}
+
+header.masthead .site-heading .subheading {
+  font-size: 34px;
+}
+
+/* =========================
+   POST PREVIEW
+========================= */
+
+.post-preview > a {
+  color: #212529;
+}
+
+.post-preview > a:hover,
+.post-preview > a:focus {
+  text-decoration: none;
+  color: #0085a1;
+}
+
+.post-preview > a > .post-title {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.post-preview > a > .post-subtitle {
+  font-weight: 300;
+  margin: 0 0 10px;
+}
+
+.post-preview > .post-meta {
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+  color: #868e96;
+}
+
+/* =========================
+   FORMS
+========================= */
+
+.floating-label-form-group {
+  font-size: 14px;
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: .5em;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+  font-size: 1.5em;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  resize: none;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none !important;
+  font-family: Lora, 'Times New Roman', serif;
+}
+
+/* =========================
+   FOOTER & BUTTONS
+========================= */
+
+footer {
+  padding: 10px 0 65px;
+}
+
+footer .copyright {
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 15px 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.btn-primary {
+  background-color: #0085a1;
+  border-color: #0085a1;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #00657b !important;
+  border-color: #00657b !important;
+  color: #fff;
+}
+
+/* =========================
+   UTILITIES
+========================= */
+
+.avatar {
+  width: 100%;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.project {
+  padding-top: 40px;
+}
+
+.title {
+  margin-top: 5px !important;
+}
+
+.btn-lg {
+  font-size: 16px;
+  padding: 25px 35px;
+}
+
+hr {
+  margin-top: 4.5rem !important;
+  margin-bottom: 3.5rem !important;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  header.masthead {
+    background-size: 100% 100%;
+    background-color: #212529;
+  }
+
+  header.masthead .page-heading,
+  header.masthead .post-heading,
+  header.masthead .site-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 0;
+  }
+
+  header.masthead .site-heading h1 {
+    font-size: 36px;
+  }
+
+  header.masthead .site-heading .subheading {
+    font-size: 17px;
+  }
+
+  footer .copyright {
+    font-size: 13px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .home-heading h1 {
+    margin-top: 170px;
+  }
+
+  p.text-center {
+    text-align: center !important;
+  }
+}
