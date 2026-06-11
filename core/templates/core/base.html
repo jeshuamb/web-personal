@@ -22,7 +22,7 @@
 
   </head>
 
-  <body>
+  <body class="{% block body_class %}{% endblock %}">
 
     <!-- Navegación -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -52,7 +52,7 @@
     </nav>
 
     <!-- Cabecera -->
-    <header class="masthead" style="background-image: url('{% block background %}{% endblock %}')">
+    <header class="masthead {% block header_class %}{% endblock %}" style="background-image: url('{% block background %}{% endblock %}')">
       <div class="overlay"></div>
       <div class="overlay"></div>
       <div class="container">
