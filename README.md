@@ -92,18 +92,20 @@ Proyecto personal. Sin licencia especificada.
 
 ## Vista de Web Personal
 
-### Pagina de perfil
+### Página de perfil
 
 ![Perfil](assets/perfil.png)
+
+### Página de Acerca de (TaskMaster)
+
+![TaskMaster](assets/about.png)
 
 ### Portafolio de proyectos
 
 ![Portafolio](assets/portafolio.png)
 
-### Pagina de contacto
+### Página de contacto
 
 ![Contacto](assets/contacto.png)
 
-### Vista de proyecto individual (TaskMaster)
 
-![TaskMaster](assets/taskmaster.png)
