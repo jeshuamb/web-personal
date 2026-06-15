@@ -396,6 +396,10 @@ header.masthead.page-contact {
     font-size: 17px;
   }
 
+  h2.section-heading {
+    text-align: center;
+  }
+
   footer .copyright {
     font-size: 13px;
     margin-bottom: 0;
@@ -412,6 +416,10 @@ header.masthead.page-contact {
 
   .text-justify {
     text-align: center !important;
+  }
+
+  a.link {
+    text-align: center ;
   }
 }
 
