@@ -96,7 +96,7 @@ Proyecto personal. Sin licencia especificada.
 
 ![Perfil](assets/perfil.png)
 
-### Página de Acerca de (TaskMaster)
+### Página de Acerca de 
 
 ![TaskMaster](assets/about.png)
 
