@@ -1,6 +1,6 @@
 # Web Personal - Jesus Marin
 
-Portafolio web personal construido con Django 6.0.5. Incluye pagina de perfil, seccion acerca de mi, galeria de proyectos y pagina de contacto.
+Portafolio web personal construido con Django 6.0.5. Incluye página de perfil, sección acerca de mi, galería de proyectos y página de contacto.
 
 ## Estructura del proyecto
 
